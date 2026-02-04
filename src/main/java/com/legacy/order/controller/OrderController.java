@@ -10,6 +10,7 @@ public class OrderController {
 
     private OrderService service = new OrderService();
 
+    //get orders
     @GetMapping("/{id}")
     public Order getOrder(@PathVariable int id) {
         return service.getOrderById(id);
